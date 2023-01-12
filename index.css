@@ -159,3 +159,87 @@ p {
   background-color: #0A3871;
   color: #FFF;
 }
+
+@media screen and (max-width: 376px) {
+  main,
+  body {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque-entrada {
+    margin-bottom: 5%;
+    width: 95%;
+  }
+
+  .bloque-mensaje {
+    width: 95vw;
+    height: fit-content;
+    margin-bottom: 5%;
+  }
+
+  .botones {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .boton {
+    width: 98vw;
+    margin: 1%;
+  }
+
+  #img-muñeco {
+    display: none;
+  }
+
+  .error-grande {
+    margin-top: 2%;
+  }
+
+  #input-texto {
+    height: 30vh;
+  }
+
+  #boton-copiar {
+    max-width: 80vw;
+  }
+
+  .error {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width:376px) {
+  main {
+    display: flex;    
+    flex-direction: column;
+  }
+
+  #img-muñeco {
+    display: none;
+  }
+
+  .bloque-entrada {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .bloque-mensaje {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .error-grande {
+    margin-top: 1%;
+  }
+
+  .error {
+    align-items: center;
+  }
+
+}
